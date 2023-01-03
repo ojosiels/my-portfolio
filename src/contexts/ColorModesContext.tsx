@@ -12,7 +12,7 @@ interface iColorModesProviderProps {
 export const ColorModesContext = createContext({} as iColorModesContext);
 
 const ColorModesProvider = ({ children }: iColorModesProviderProps) => {
-  const [currentTheme, setCurrentTheme] = useState<"dark" | "light">("light");
+  const [currentTheme, setCurrentTheme] = useState<"dark" | "light">("dark");
 
   const changeTheme = () => {
     currentTheme === "light"
